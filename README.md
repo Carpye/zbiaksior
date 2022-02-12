@@ -1,0 +1,2 @@
+# zbiaksior
+pliki dla zbiaksiora
