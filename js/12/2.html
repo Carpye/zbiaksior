@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+
+<script>
+    const personal__info = ["Kacper", "Misha", "Kajetan", "Krzysiek", "Mikołaj"];
+    let container = document.querySelector(".container");
+    let result = personal__info.map(xd);
+    container.innerHTML = result.join("");
+
+    function xd(e) {
+        return `<h3>${e}</h3>`;
+    }
+
+
+    </script>
+</body>
+</html>
+
+<!--
+Na podstawie danej tablicy z cw1 utwórz nową tablicę, która będzie zawierała tylko imiona Twoje i twoich kolegów z klasy.
+
+POMOC:
+Metoda .map() zwraca tablicę w operciu o tablicę wejściową. 
+Patrz przykład2.html
+-->

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <div class="container"></div>
+    <script>
+            //harder version - with objects in table
+
+
+        // const personal__info = [
+        //     {
+        //         firstname: "Kacper",
+        //         lastname: "Kozłowski"
+        //     },
+        //     {
+        //         firstname: "Mykhailo",
+        //         lastname: "Aksonov"
+        //     },
+        //     {
+        //         firstname: "Kajetan",
+        //         lastname: "Pawlak"
+        //     },
+        //     {
+        //         firstname: "Krzysiek",
+        //         lastname: "Godyń"
+        //     },
+        //     {
+        //         firstname: "Mikołaj",
+        //         lastname: "Szlosowski"
+        //     }
+        // ];
+        // let demo = document.getElementById("demo");
+        // let tablica2 = [];
+        // let i = 0;
+        // let container = document.querySelector(".container");
+        // for(item of personal__info ){
+        //     let imie = item.firstname, nazwisko = item.lastname;
+
+        //     tablica2[i] = imie + " " + nazwisko;
+        //     container.innerHTML += `<p>${imie} ${nazwisko}</p>`;
+        //     i++;
+        // }
+        // demo.innerHTML = tablica2.join(", ");
+
+            //easier version - with just first and last name in a single string
+            const personal__info = ["Kacper Kozłowski", "Misha Aksonov", "Kajetan Pawlak", "Krzysiek Godyń", "Mikołaj Szlosowski"];
+            document.querySelector("p").innerHTML = personal__info.join(", ");
+            for(item of personal__info) document.querySelector(".container").innerHTML += `<p>${item}</p>`;
+    </script>
+</body>
+</html>
+
+<!-- Zdefiniuj tablicę, która będzie zawierała imiona i nazwiska Twoje i 4 kolegow z klasy. Na początku tablicy twoje imie i nazwisko.
+
+Wyświetl elementy tablicy na stronie html w jedenj lini rozdzielone przecinakmi. Poniżej wyświetl jej elementy w kolejnych akapitach. -->
+
+<!-- ` = backtick -->

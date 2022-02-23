@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+    </div>
+
+
+
+
+
+
+    <script>
+        const personal__info = ["Kacper Kozłowski", "Misha Aksonov", "Kajetan Pawlak", "Krzysiek Godyń", "Mikołaj Szlosowski"];
+        let container = document.querySelector(".container");
+        let nazwiska = [];
+        for(i = 0; i < personal__info.length; i++){
+            let x = personal__info[i].indexOf(" ");
+            nazwiska.push(personal__info[i].substr(x+1));
+        }
+        nazwiska.sort();
+        function xd(e) {
+            return '<h3>' + e + '</h3>';
+        }
+        let result = nazwiska.map(xd);
+        container.innerHTML = result.join("");
+    </script>
+</body>
+</html>
+
+<!-- Dla tablicy z cw1 >  nazwiska osób z tablicy, wyświetl jako nagłówki 3 stopnia, które będą posortowane alfabetycznie.
+
+POMOC:
+W zadaniu tym trzeba odpowiednio połączyć ze sobą poznane metody:
+map()
+substr() > patrz przyklad5a.html
+indexOF() > patrz przyklad5b.html
+sort()
+join() -->
