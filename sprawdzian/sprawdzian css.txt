@@ -1,0 +1,28 @@
+Korzystajac z zalaczonego arkusza stylow utworz szablon strony www (template)
+Ponizej warunki jakie musi spelnic szablon:
+
+>pliku style.css nie modyfikujemy > cale zadanie nalezy wykonac w pliku index.html, 
+ktory dostosowujemy do pliku ze stylami style.css
+>standardowy szkielet strony html dostosowany do języka polskiego
+>uklad strony html zgodny z ukladem na rysunku oparty na div'ach
+>temat i teksty do poszczegolnych sekcji oraz opis elementow menu zdefiniuj 
+samodzielnie wzorujac sie na sugerowanym wygladzie strony
+>do menu nie podpinamy linkow
+>glowny tekst w sekcji content wygeneruj za pomoca generatora Lorem ipsum
+
+Po wykonaniu strony html odpowiedz pisemnie na pytania zwiazane z zadaniem:
+Ile klas zostalo zdefiniowanych w pliku style.css?
+> ... 3
+> Jakim symbolem w pliku css poprzedzamy definicje identyfikatorow?
+> ... #
+Opisz atrybuty, ktore zostaly zdefiniowane w sekcji body:
+background-color: > ... kolor tła strony
+font-family: > ... czcionka na stronie
+Do czego w zadaniu zostala wykorzystana sekcja .optionL:hover?
+> ... Została wykorzystana do zmiany wyglądu elementu menu, na którym znajduje się aktualnie myszka.
+
+Plik "sprawdzian css.txt" z odpowiedziami na pytania dolacz do pliku style.css oraz index.html, wykonaj archiwum sprawdzianImieNazwiskoKlasaGrupa.zip i wyslij do oceny.
+
+
+
+
