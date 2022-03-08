@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header { grid-area: header; background: rgb(255, 255, 255);box-shadow: 0 0 15px white;
+	position: relative;
+	z-index: 100;}
+.menu { grid-area: menu; background: rgb(0, 0, 0);
+color: white; position: relative;
+	z-index: 99;box-shadow: 0 0 15px black;}
+.content {
+    grid-area: content;
+    background: rgb(134, 134, 134);
+    background-image: linear-gradient(45deg, rgb(139, 222, 255), rgb(139, 255, 174));
+    animation: hue 10s linear infinite;
+}
+.footer { grid-area: footer; background: rgb(255, 255, 255);box-shadow: 0 0 15px white;
+	position: relative;
+	z-index: 100;}
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'menu content content content'
+    'footer footer footer footer';
+    grid-template-columns: 15% auto auto auto;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+@keyframes hue {
+    0%,100%{filter: hue-rotate(0deg);}
+    50%{filter: hue-rotate(360deg);}
+}
+
+
+</style>
+</head>
+<body>
+    <main>
+        <header class="header flex">
+nagłówek
+        </header>
+        <div class="menu flex">
+menu
+        </div>
+        <div class="content flex">
+treść
+        </div>
+        <footer class="footer flex">
+stopka
+        </footer>
+    </main>
+</body>
+</html>
